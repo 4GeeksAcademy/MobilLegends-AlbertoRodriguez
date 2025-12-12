@@ -4,7 +4,11 @@ export const Card = (props) => {
         <div className="col-sm-6 col-md-4 p-2">
             <div className="card">
                 <div className=" d-flex justify-content-center" style={{ width: "100%", overflow: "hidden", aspectRatio: "3/4" }}>
-                    <img src={props.personaje.imagen} alt="..." />
+                    <img src={props.personaje.imagen} alt="..." style={{
+                        height: '100%',
+                        width: '100%',
+                        objectFit: 'cover'
+                    }} />
                 </div>
                 <div className="card-body">
                     <h4 className="card-title">{props.personaje.nombre}</h4>
@@ -12,8 +16,8 @@ export const Card = (props) => {
                     <div className="abilidades-container">
                         <h5>Habilidades</h5>
                         <ul>
-                            {props.personaje.abilidades.map((habilidad,index) =>{
-                                return(
+                            {props.personaje.abilidades.map((habilidad, index) => {
+                                return (
                                     <li key={index}>{habilidad}</li>
                                 )
                             })}

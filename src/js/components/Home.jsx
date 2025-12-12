@@ -81,6 +81,7 @@ const Home = () => {
 	return (
 		<>
 			<Navbar />
+			<Jumbotron/>
 			<div className="container">
 				<h1>Movil lengends</h1>
 				<div className="row">
