@@ -5,6 +5,7 @@ import rigoImage from "../../img/rigo-baby.jpg";
 import Navbar from "./Navbar";
 import Jumbotron from "./Jumbotron";
 import { Card } from "./Card";
+import Footer from "./Footer";
 
 //create your first component
 const Home = () => {
@@ -83,7 +84,7 @@ const Home = () => {
 			<Navbar />
 			<Jumbotron/>
 			<div className="container">
-				<h1>Movil lengends</h1>
+				<h1 className="text-center">Movil Lengends</h1>
 				<div className="row">
 					{
 						personajesMobilLegends.map(personaje => {
@@ -95,6 +96,7 @@ const Home = () => {
 				</div>
 
 			</div>
+			<Footer/>
 		</>
 	);
 };

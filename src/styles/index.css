@@ -1,0 +1,7 @@
+body {
+  background-image: url("https://wallpapers.com/images/hd/mobile-legends-background-su9y2bzjkefwk11d.jpg");
+  background-size: cover;        /* Ajusta la imagen a toda la pantalla */
+  background-repeat: no-repeat;  /* Evita que se repita */
+  background-position: center;   /* Centra la imagen */
+  margin: 0;
+}
